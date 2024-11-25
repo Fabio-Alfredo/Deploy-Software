@@ -29,8 +29,6 @@ export const patchTodoValidator = [
 
     body('description').optional().isString().withMessage('Description must be a string')
     .isLength({min: 1}).withMessage('Description must be at least 1 characters'),
-
-    body('reminder').optional().isDate().withMessage('Reminder must be a date'),
     
     body('color').optional().isString().withMessage('Color must be a string')
 ]
